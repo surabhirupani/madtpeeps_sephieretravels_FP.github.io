@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Saphire travels - Contact</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
+    <link rel="stylesheet" href="css/main-child.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+<script src="js/jquery.min.js-"></script>
+  </head>
+  <body>
+  
+         
+     
+<script>
+function myFunction() {
+  var x = document.getElementById("nv");
+  if (x.className === "navbar-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar-nav";
+  }
+}
+</script>
+ <div class="container-fluid">
+        <div class="row top-row-">
+          <div class="div-one-third">
+            <div class="top-container background-lowopacity-">
+              <a href="index.html"><img src="img/logo.png" width="100"></a>
+            </div>
+          </div>
+          <div class="div-70-percent">
+           
+              <div class="navigation">
+              <nav class="navbar nav-mobileview navbar-light background-lowopacity- navigationbar">              
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav" id="nv">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home </a><div class="navigation-link-highlight"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a><div class="navigation-link-highlight"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="tours.html">Tours</a><div class="navigation-link-highlight"></div>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="contact.html">Contact</a><div class="navigation-link-highlight"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="gallery.html">Gallery</a><div class="navigation-link-highlight"></div>
+                    </li>
+                   <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <img src="img/togglemenu.png"></a>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+
+</div>
+ <!--slider strt--> 
+    <div class="full-width">
+        	<section class="backgroungblackopacity ">
+                
+                <video autoplay muted="" loop id="myVideo">
+  <source src="img/video.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+            </section>
+        </div>
+       <div class="clear"></div>   
+    <!--slider end-->
+
+
+<div class="container-fluid padding50 text-center">
+<div class="fontstyle"><h1><span class="borderbottom">Contact Saphire travels</span></h1></div>
+<p><h2>Our History, Our Mission, Our Guides</h2></p>
+<p><button type="submit" class="btn btn-secondary" onClick="window.location = 'contact.html#contctform';">Contact Us</button></p>
+
+<div class="div-one-third floatleft margintop paddingtop paddingbottom">
+<img src="img/k2.jpg">
+</div>
+<div class="div-one-third floatleft margintop paddingtop paddingbottom">
+<img src="img/m1.jpg">
+</div>
+<div class="div-one-third floatleft margintop paddingtop paddingbottom">
+<img src="img/t1.jpg">
+</div>
+</div>
+ <div class="clear"></div>  
+
+ <div class="scroll-effectinner" data-parallax="scroll"> 
+ <div class="container-fluid paddingtop">     
+
+        <section class="row" id="work-contact">
+          <div class="full-width">
+                 <div class="backgroungblackopacity text-center workhead testimonials-header">
+                    <h2 class="text-uppercase work-page-title testimonials-page-title">Contact Us</h2>
+                    <p class="work-description mb-0 small">
+                        Email: info@saphiretravels.com <br> Mobile: +1419988888
+                    </p>
+                </div>
+          </div>   
+        </section>
+
+        <section class="row contact-row" id="contctform">
+            <div class="halfwidth contact-col-left">
+            
+                <form action="#" method="POST" id="contactfrm" class="backgroungblackopacity contact-form" onsubmit="store()">
+                <p>Contact for any question or booking information:</p>
+                  <div class="form-group">
+                    <input type="text" id="contact_name" name="contact_name" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Name" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" id="contact_email" name="contact_email" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Email" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" id="contact_phone" name="contact_phone" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Phone" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" id="contact_location" name="contact_location" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Prefered Location" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" id="contact_personno" name="contact_personno" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="No. of Adults & Children" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <textarea rows="6" id="contact_message" name="contact_message" class="form-control rounded-0 border-top-0 border-right-0 border-left-0" placeholder="Message" required></textarea>
+                  </div>
+                  <div class="text-right">
+                    <button type="submit" onclick="store()" class="btn btn-primary btn-submit rounded-0">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+            </div>
+            <div class="halfwidth contact-col-right">
+                <div class="backgroungblackopacity contact-text">
+                            
+                     <a href="tour/kerala.html"><img src="img/3.jpg" style="width:100%"></a>
+                    
+                    <p class="work-tab-title">Kerala Tour</p>
+                      <a href="tour/toronto.html"><img src="img/2.jpg" style="width:100%"></a>
+                    
+                    <p class="work-tab-title">Toronto City Tour</p>
+                     <a href="tour/maldive.html"> <img src="img/4.jpg" style="width:100%"></a>
+                    
+                    <p class="work-tab-title">Maldives Tour</p>
+                    
+                    <p><button type="button" class="btn btn-secondary" onClick="window.location = 'tours.html';">Explore Our Tours</button></p>
+                    <p><button type="button" class="btn btn-secondary" onClick="window.location = 'faq.html';">FAQs</button></p>
+                </div>
+            </div>
+        </section>
+
+ <script>
+
+function store(){
+    localStorage.setItem("contact_name", document.getElementById("contact_name").value);
+    localStorage.setItem("contact_email", document.getElementById("contact_email").value);
+    localStorage.setItem("contact_phone", document.getElementById("contact_phone").value);
+    localStorage.setItem("contact_location", document.getElementById("contact_location").value);
+    localStorage.setItem("contact_personno", document.getElementById("contact_personno").value);
+    localStorage.setItem("contact_message", document.getElementById("contact_message").value);
+  }
+
+function myFunction() {
+  var x = document.getElementById("nv");
+  if (x.className === "navbar-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar-nav";
+  }
+}
+</script>     
+
+         
+      </div>
+    </div>
+
+    <footer class="row">
+          <p class="full-width text-white text-center copyright-text">
+            Copyright &copy; 2022  - All Rights Reserved
+          </p>
+        </footer>
+  </body>
+</html>

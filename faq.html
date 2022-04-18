@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Saphire travels - Sitemap</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" />
+    <link rel="stylesheet" href="css/main-child.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+  </head>
+  <body>
+  
+      <div class="container-fluid">
+        <div class="row top-row-">
+          <div class="div-one-third">
+            <div class="top-container background-lowopacity-">
+              <a href="index.html"> <img src="img/logo.png" width="100"></a>
+            </div>
+          </div>
+          <div class="div-70-percent">
+           
+              <div class="navigation">
+              <nav class="navbar nav-mobileview navbar-light background-lowopacity- navigationbar">              
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav" id="nv">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home </a><div class="navigation-link-highlight"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a><div class="navigation-link-highlight"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="tours.html">Tours</a><div class="navigation-link-highlight"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a><div class="navigation-link-highlight"></div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="gallery.html">Gallery</a><div class="navigation-link-highlight"></div>
+                    </li>
+                   <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <img src="img/togglemenu.png"></a>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+
+</div>
+ 
+
+
+<div class="container-fluid padding50 text-center">
+<div class="fontstyle"><h1><span class="borderbottom"> Saphire travels Frequently Asked Questions</span></h1></div>
+<p><h2>FAQ</h2></p>
+
+
+</div>
+ <div class="clear"></div>  
+
+ <div class="scroll-effectinner" data-parallax="scroll"> 
+ <div class="container-fluid">
+
+        <section id="aboutfeature">
+            <div class="row">
+                <div class="full-width  text-white  padding10 app-header paddingtop paddingbottom">
+<!--start-->
+
+<div class="faq">
+<button class="accordion">Is the tourism working in pandemic?</button>
+<div class="panel">
+  <p>The pandemic changes the world, but it also rallies Expedians like never before. We act fast, launching recovery initiatives designed to support the business, our partners, destinations and industry.</p>
+</div>
+
+<button class="accordion">How many days before we can cancel the plan?</button>
+<div class="panel">
+  <p>You may cancel the plan at anytime but its advisable to inform us 24 hours befor the departure. The sooner you let us know the sooner we will work on it.</p>
+</div>
+
+<button class="accordion">How many times in a month there is toronto tour?</button>
+<div class="panel">
+  <p>We arrange Toronto city tour once in a month.</p>
+</div>
+
+<button class="accordion">Isn’t it too hot to do a walking tour in Kerala?</button>
+<div class="panel">
+  <p>Kerala has sunshine all over the year but its mainly hot in the months of June to  August. However, many peple prefer to see it during these months so we offer tours all year round.</p>
+</div>
+</div>
+
+<!----end--->
+                    
+                </div>
+
+            </div> 
+        </section>
+     
+       <div class="clear"></div> 
+    
+<div class="full-width  text-white  padding45 app-header paddingtop paddingbottom text-center">    
+    <img id="myImg" src="img/6.jpg" alt="Saphire travels" style="width:80%;">
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+ </div>      
+
+ <script>
+function myFunction() {
+  var x = document.getElementById("nv");
+  if (x.className === "navbar-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar-nav";
+  }
+}
+
+
+//faq accordian
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+
+//modal
+// Get the modal
+var modal = document.getElementById("myModal");
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+} 
+</script>       
+        
+      </div>
+      
+    </div>
+       <footer class="row">
+          <p class="full-width text-white text-center copyright-text">
+            Copyright &copy; 2022  - All Rights Reserved
+          </p>
+        </footer>
+
+  </body>
+</html>
